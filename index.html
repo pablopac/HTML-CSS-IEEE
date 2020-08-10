@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML CSS IEEE</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/bacteria.png">
+    
+</head>
+<body>
+    <nav class="nav-uno">
+        <div class="contenetdor flex-nav">
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="img/virus-white.png" alt="">
+                </a>
+            </div>
+            <div class="titulo">
+                <h1>PAGINA PRUEBA</h1>
+               <!-- <h1>TE ADORO MUCHO</h1> -->
+            </div>
+            <label for="check-burger" class="label-check-burger">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="check-burger">
+            <div class="links">
+                <!-- <a href="https://www.flaticon.com/">Flaticon</a>
+                <a href="https://unsplash.com/">Unsplash</a>
+                <a href="https://fonts.google.com/">Fonts</a>
+                <a href="https://cdnjs.com/">CDNjs</a>
+                <a href="https://fontawesome.com/">Fontawesome</a> -->
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contactos">Contactos</a>
+            </div>
+            <div class="links-escritorio">
+                <!-- <a href="https://www.flaticon.com/">Flaticon</a>
+                <a href="https://unsplash.com/">Unsplash</a>
+                <a href="https://fonts.google.com/">Fonts</a>
+                <a href="https://cdnjs.com/">CDNjs</a>
+                <a href="https://fontawesome.com/">Fontawesome</a> -->
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contactos">Contactos</a>
+            </div>
+        </div>
+
+    </nav>
+    <div id="prueba">Texto Prueba 2</div>
+    
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>    
+<!-- <script type="text/javascript">
+    window.onload = function() {
+
+        /* var ln = x=window.navigator.language || navigator.browserLanguage; */
+        var ln = document.documentElement.lang;
+        console.log(ln);
+        if(ln == 'en-US'){
+            console.log('Ingles');
+            var elemento = document.getElementById("prueba");
+            elemento.innerHTML = "<h2>Otra mas interesante para Prueba</h2>";
+            /* $("#prueba").text("Texto Prueba"); */
+        
+        }else if(ln == 'es-ES'){
+            var elemento = document.getElementById("prueba");
+            elemento.innerHTML = "<h2>Otra mas interesante para Prueba</h2>";
+            console.log('Español');
+        }else{
+            
+            console.log('No funciono')
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        console.log('Hola');
+        var shipping = document.querySelectorAll('#order_review>table>tfoot>tr.woocommerce-shipping-totals>th');
+
+        /*  */
+        
+
+        /* shipping_method[0] */
+
+        for(var i = 0; i<shipping.length; i++){
+            shipping[i].innerHTML='Envio'
+        }
+        console.log(shipping);
+
+    }
+
+    
+</script>
+
+<script type="text/javascript">
+    setTimeout(function () {
+        var shipping = document.querySelectorAll('#order_review>table>tfoot>tr.woocommerce-shipping-totals>th');
+		console.log(shipping);
+        for(var i = 0; i<shipping.length; i++){
+          shipping[i].innerHTML.replace('Shipping','Envio');
+          console.log(shipping[i].innerHTML);
+        }
+    },10000);
+    
+</script>
+
+<script type="text/javascript">
+    setTimeout(function () {
+        var shipping = document.querySelectorAll('#order_review>table>tfoot>tr.woocommerce-shipping-totals>th');
+
+        for(var i = 0; i<shipping.length; i++){
+          shipping[i].innerHTML=shipping[i].innerHTML.replace('Shipping','Envio')
+
+        }
+        var rad = document.getElementById('shipping_method') ;
+        console.log(rad);
+        for(var i = 0; i<rad.length; i++){
+            console.log(i);
+        }
+
+
+        var prev = null;
+        for (var i = 0; i < rad.length; i++) {
+            rad[i].addEventListener('change', function() {
+                console,log('escucho')
+            });
+        }
+    },10000);
+
+
+    
+</script> -->
+</html>
